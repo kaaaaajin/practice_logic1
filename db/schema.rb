@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_17_113623) do
+ActiveRecord::Schema.define(version: 2023_03_19_010950) do
 
-  create_table "weights", force: :cascade do |t|
-    t.string "height"
-    t.string "weight"
-    t.string "bmi"
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.integer "height"
+    t.integer "weight"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
